@@ -1,0 +1,112 @@
+/* Reset and Basic Styles */
+
+/* Set body width to 100% and remove padding */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure body takes full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling if content overflows */
+}
+
+/* Container */
+.container {
+    max-width: 100%; /* Allow container to take full width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center; /* Center the heading */
+}
+
+h5 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center; /* Center class titles */
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 20px; /* Adjust margins */
+}
+
+/* Resized Image */
+.resized-image {
+    width: 100%; /* Use 100% to ensure it is responsive */
+    max-width: 1000px; /* Limit the width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+}
+
+.left-margin {
+    margin-left: 50px; /* Left margin of 50 pixels */
+}
+
+/* Full-Width Container */
+.class-card {
+    display: flex; /* Sử dụng flexbox để sắp xếp nội dung bên trong */
+    flex-direction: column; /* Đặt chiều hướng của flex là cột */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    text-align: center; /* Căn giữa văn bản */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa của thẻ */
+    width: 100%; /* Chiều rộng chiếm toàn bộ không gian của container */
+    gap: 15px; /* Khoảng cách bên trong thẻ */
+    padding: 20px; /* Đệm bên trong thẻ */
+    border: 1px solid #73d3ce; /* Thêm viền để phân biệt */
+    border-radius: 8px; /* Bo tròn các góc */
+    transition: box-shadow 0.3s ease; /* Hiệu ứng chuyển tiếp cho bóng đổ khi hover */
+    margin-bottom: 20px; /* Khoảng cách giữa các thẻ là 20px */
+}
+
+/* Điều chỉnh khoảng cách giữa các thẻ .class-card */
+.container1 {
+    display: flex; /* Sử dụng flexbox cho container */
+    justify-content: center; /* Căn giữa các thẻ trong container */
+    gap: 30px; /* Khoảng cách giữa các thẻ là 20px */
+    padding: 5px; /* Đệm xung quanh container */
+}
+
+.class-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Class Card Images */
+.class-card img {
+    width: 100%; /* Use 100% for responsive images */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Jump Image Effect */
+.jump-image {
+    width: 100px; /* Adjusted for smaller images */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.jump-image:hover {
+    animation: jump 0.6s ease infinite; /* Jump effect on hover */
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust jump height */
+    }
+}
+
+/* Additional Span Styling */
+.class-card h3 {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0 10px; /* Add padding for better readability */
+}
+
+/* Additional Styles if needed */
